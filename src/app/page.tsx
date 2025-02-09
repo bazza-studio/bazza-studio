@@ -53,7 +53,7 @@ export default function Home() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: 0.9 }}
-            className="mt-8 space-y-3 text-right"
+            className="mt-8 space-y-6 text-right"
           >
             {[
               {
@@ -64,14 +64,17 @@ export default function Home() {
             ].map((item) => (
               <div
                 key={item.name}
-                className="flex justify-end items-center space-x-3"
+                className="flex flex-col md:flex-row md:items-center justify-end space-y-1 md:space-y-0 md:space-x-3"
               >
-                <span className="text-sm text-zinc-400">
-                  <span className="font-bold">{item.name}</span>
-                  {" - "}
-                  <span className="font-light">{item.description}</span>
-                </span>
-                <span className="text-[10px] px-2 py-0.5 rounded-full bg-zinc-800/50 text-zinc-500 border border-zinc-800">
+                <div className="flex flex-col md:flex-row md:items-center space-y-1 md:space-y-0 md:space-x-2">
+                  <span className="text-sm font-bold text-zinc-300">
+                    {item.name}
+                  </span>
+                  <span className="text-xs md:text-sm font-light text-zinc-400 md:before:content-['-'] md:before:mx-2">
+                    {item.description}
+                  </span>
+                </div>
+                <span className="text-[10px] px-2 py-0.5 rounded-full bg-zinc-800/50 text-zinc-500 border border-zinc-800 w-fit ml-auto">
                   soon
                 </span>
               </div>
