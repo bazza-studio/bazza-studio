@@ -21,6 +21,13 @@ export default function Home() {
         transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
         className="absolute inset-0 bg-gradient-to-l from-black/100 to-transparent z-10"
       />
+      {/* Add this new gradient for top */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
+        className="absolute inset-0 bg-gradient-to-b from-black/100 via-transparent to-transparent z-10 h-32 lg:hidden"
+      />
 
       <div className="absolute inset-0 z-20 flex flex-col justify-center px-8 md:px-16 lg:px-24">
         <div className="ml-auto w-full md:w-1/2 text-right">
