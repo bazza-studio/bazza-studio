@@ -7,6 +7,9 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily:{
+      geist: ['var(--font-geist-sans)'],
+    },
     extend: {
       colors: {
         background: "var(--background)",
