@@ -3,6 +3,7 @@ import Image from "next/image";
 import testImage from "../../public/jari-hytonen-VJBIn6n_gzI-unsplash.webp";
 import { motion } from "framer-motion";
 import { Clock } from "./components/clock";
+import Balancer from "react-wrap-balancer";
 
 export default function Home() {
   return (
@@ -38,8 +39,10 @@ export default function Home() {
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.8 }}
               className="text-lg md:text-xl text-gray-300 font-light leading-relaxed"
             >
-              Revolutionizing restaurant management and urban exploration
-              through intuitive, powerful web applications.
+              <Balancer>
+                Revolutionizing restaurant management and urban exploration
+                through intuitive, powerful web applications.
+              </Balancer>
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
