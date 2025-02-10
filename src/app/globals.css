@@ -16,7 +16,6 @@ body {
   color: var(--foreground);
   background: var(--background);
   height: 100%;
-  overflow: hidden;
 }
 
 /* Para asegurar el fondo en todos los navegadores */

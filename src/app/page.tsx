@@ -15,15 +15,14 @@ export default function Home() {
       >
         <Image src={testImage} alt="bg" fill className="object-cover z-0" />
       </motion.div>
-
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
         className="absolute inset-0 bg-gradient-to-b lg:bg-gradient-to-l from-black/100 via-black/80 to-transparent z-10 backdrop-blur-[1rem] lg:backdrop-blur-0"
       />
-
       <div className="absolute inset-0 z-20 flex flex-col justify-center px-8 md:px-16 lg:px-24">
+        <Clock />
         <div className="ml-auto w-full md:w-1/2 text-right">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -33,14 +32,6 @@ export default function Home() {
           >
             Bazza Studio 匠
           </motion.h1>
-          {/* <motion.span
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: "easeOut", delay: 0.7 }}
-            className="text-sm md:text-base text-zinc-400 uppercase tracking-wider font-bold mb-4 block"
-          >
-            Smart Software Solutions
-          </motion.span> */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -82,7 +73,6 @@ export default function Home() {
             ))}
           </motion.div>
         </div>
-        <Clock />
       </div>
     </div>
   );
