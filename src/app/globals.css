@@ -16,7 +16,6 @@ html {
   cursor: none !important;
 }
 
-/* Para asegurar el fondo en todos los navegadores */
 .landing-container {
   background: #000000;
   color: #ffffff;
