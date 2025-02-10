@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import testImage from "../../public/jari-hytonen-VJBIn6n_gzI-unsplash.jpg";
+import testImage from "../../public/jari-hytonen-VJBIn6n_gzI-unsplash.webp";
 import { motion } from "framer-motion";
 import { Clock } from "./components/clock";
 
