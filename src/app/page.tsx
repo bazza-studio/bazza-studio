@@ -4,7 +4,7 @@ import testImage from "../../public/jari-hytonen-VJBIn6n_gzI-unsplash.webp";
 import { motion } from "framer-motion";
 import { Clock } from "./components/clock";
 import Balancer from "react-wrap-balancer";
-import { Separator } from "@/components/ui/separator";
+// import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
   return (
