@@ -19,7 +19,7 @@ export default function Home() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
-        className="absolute inset-0 bg-gradient-to-b lg:bg-gradient-to-l from-black/100 via-black/80 to-transparent z-10 backdrop-blur-[1rem] lg:backdrop-blur-0"
+        className="absolute inset-0 bg-gradient-to-b lg:bg-gradient-to-r from-black/100 via-black/80 to-transparent z-10 backdrop-blur-[1rem] lg:backdrop-blur-0"
       />
       <div className="absolute inset-0 z-20 flex flex-col justify-between px-8 md:px-16 lg:px-24">
         <div className="flex-1 flex flex-col justify-center">
