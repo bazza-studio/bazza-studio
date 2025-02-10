@@ -4,6 +4,7 @@ import testImage from "../../public/jari-hytonen-VJBIn6n_gzI-unsplash.webp";
 import { motion } from "framer-motion";
 import { Clock } from "./components/clock";
 import Balancer from "react-wrap-balancer";
+import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
   return (
@@ -33,6 +34,20 @@ export default function Home() {
             >
               Bazza Studio
             </motion.h1>
+            <motion.div
+              initial={{ opacity: 0, scaleX: 0 }}
+              animate={{ opacity: 1, scaleX: 1 }}
+              transition={{
+                duration: 0.8,
+                ease: [0.4, 0, 0.2, 1], // easing suave
+                delay: 0.7,
+              }}
+              className="flex justify-end w-full mb-4"
+            >
+              <Separator className="w-64 origin-right" />{" "}
+              {/* origin-right para que la animación empiece desde la derecha */}
+            </motion.div>
+
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
