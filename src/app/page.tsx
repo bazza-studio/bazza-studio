@@ -2,6 +2,7 @@
 import Image from "next/image";
 import testImage from "../../public/jari-hytonen-VJBIn6n_gzI-unsplash.jpg";
 import { motion } from "framer-motion";
+import { Clock } from "./components/clock";
 
 export default function Home() {
   return (
@@ -81,6 +82,7 @@ export default function Home() {
             ))}
           </motion.div>
         </div>
+        <Clock />
       </div>
     </div>
   );
