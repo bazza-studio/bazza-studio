@@ -7,14 +7,11 @@
   --foreground: #ffffff;
 }
 
-html {
-  height: 100%;
-}
-
 body {
   color: var(--foreground);
   background: var(--background);
-  height: 100%;
+  height: min-h-screen;
+  overflow: hidden;
 }
 
 /* Para asegurar el fondo en todos los navegadores */
