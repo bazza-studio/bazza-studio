@@ -28,7 +28,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
-              className="text-4xl md:text-5xl lg:text-6xl tracking-tight font-medium text-white mb-2"
+              className="text-4xl md:text-5xl lg:text-6xl tracking-tight font-semibold text-white mb-2"
             >
               Bazza Studio 匠
             </motion.h1>
@@ -66,9 +66,9 @@ export default function Home() {
                       {item.description}
                     </span>
                   </div>
-                  <span className="text-[10px] px-2 py-0.5 rounded-full bg-zinc-800/50 text-zinc-500 border border-zinc-800 w-fit ml-auto">
+                  <button className="text-[10px] px-2 py-0.5 rounded-full bg-zinc-800/50 text-zinc-500 border border-zinc-800 w-fit ml-auto disabled">
                     soon
-                  </span>
+                  </button>
                 </div>
               ))}
             </motion.div>
