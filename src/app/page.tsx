@@ -74,7 +74,7 @@ export default function Home() {
             </motion.div>
           </div>
         </div>
-        <div className="py-8 text-right">
+        <div className="py-8 text-right lg:block hidden">
           <Clock />
         </div>
       </div>
