@@ -34,7 +34,7 @@ export default function Home() {
             >
               Bazza Studio
             </motion.h1>
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, scaleX: 0 }}
               animate={{ opacity: 1, scaleX: 1 }}
               transition={{
@@ -45,8 +45,7 @@ export default function Home() {
               className="flex justify-end w-full mb-4"
             >
               <Separator className="w-64 origin-right" />{" "}
-              {/* origin-right para que la animación empiece desde la derecha */}
-            </motion.div>
+            </motion.div> */}
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -80,7 +79,7 @@ export default function Home() {
                     <span className="text-sm font-bold text-zinc-300">
                       {item.name}
                     </span>
-                    <span className="text-xs md:text-sm font-light text-zinc-400 md:before:content-['-'] md:before:mx-2">
+                    <span className="text-xs md:text-sm font-light text-zinc-400 md:before:content-['-'] md:before:mx-2 drop-shadow-xl">
                       {item.description}
                     </span>
                   </div>
