@@ -2,20 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+}
+
 body {
+  color: var(--foreground);
+  background: var(--background);
   height: 100%;
   overflow: hidden;
 }
 
-html {
-  height: 100%;
-  overflow: hidden;
-}
-
-/* * {
-  cursor: none !important;
-} */
-
+/* Para asegurar el fondo en todos los navegadores */
 .landing-container {
   background: #000000;
   color: #ffffff;
