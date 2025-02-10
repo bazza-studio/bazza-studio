@@ -16,7 +16,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Bazza Studio",
-  description: "System's like software for your business",
+  description:
+    "Revolutionizing restaurant management and urban exploration through intuitive, powerful web applications.",
 };
 
 export default function RootLayout({

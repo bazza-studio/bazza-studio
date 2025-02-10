@@ -29,9 +29,9 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
-              className="text-4xl md:text-5xl lg:text-6xl tracking-tight font-semibold text-white mb-2"
+              className="text-4xl md:text-5xl lg:text-6xl tracking-tighter font-semibold font-geistMono text-white mb-2"
             >
-              Bazza Studio 匠
+              Bazza Studio
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -76,6 +76,22 @@ export default function Home() {
               ))}
             </motion.div>
           </div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 1 }}
+            className="mt-12"
+          >
+            <a
+              href="mailto:contact@bazza.studio"
+              className="inline-flex items-center space-x-2 lg:text-base text-sm text-zinc-400 hover:text-white transition-colors duration-200 group"
+            >
+              <span className="font-light">Get in touch</span>
+              <span className="font-mono group-hover:translate-x-0.5 transition-transform duration-200">
+                →
+              </span>
+            </a>
+          </motion.div>
         </div>
         <div className="py-8 text-right lg:block hidden">
           <Clock />
