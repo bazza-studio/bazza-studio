@@ -12,9 +12,9 @@ html {
   overflow: hidden;
 }
 
-* {
+/* * {
   cursor: none !important;
-}
+} */
 
 .landing-container {
   background: #000000;
