@@ -28,7 +28,7 @@ export function Clock() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.8, ease: "easeOut", delay: 1 }}
-      className="text-sm text-zinc-500 font-geistMono"
+      className="text-sm text-zinc-500 font-geistMono drop-shadow-2xl"
     >
       {time} CLT
     </motion.div>
