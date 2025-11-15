@@ -23,7 +23,7 @@ export default function Home() {
           transition={{ duration: 2 }}
           className="relative w-full h-full"
         >
-          <Image src={testImage} alt="bg" fill className="object-cover" />
+          <Image src={testImage} alt="bg" fill className="object-cover" priority />
         </motion.div>
       </motion.div>
 
@@ -137,7 +137,7 @@ export default function Home() {
                 viewport={{ once: true }}
                 className="text-sm md:text-base text-zinc-400 font-light font-geist"
               >
-                We're also working on our own internal products to push the boundaries of what's possible in web technology.
+                We&rsquo;re also working on our own internal products to push the boundaries of what&rsquo;s possible in web technology.
               </motion.p>
             </div>
 
