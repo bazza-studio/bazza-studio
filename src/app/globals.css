@@ -7,6 +7,11 @@
   --foreground: #ffffff;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
@@ -17,14 +22,35 @@ body {
 
 /* Para asegurar el fondo en todos los navegadores */
 .landing-container {
-  background: #000000;
+  background: transparent;
   color: #ffffff;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 * {
   cursor: none !important;
+}
+
+/* Scroll snap */
+.snap-container {
+  scroll-snap-type: y mandatory;
+  scroll-padding: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100vh;
+  scroll-behavior: smooth;
+  background: transparent;
+}
+
+.snap-section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  min-height: 100vh;
+}
+
+/* Slower scroll transition */
+@media (prefers-reduced-motion: no-preference) {
+  .snap-container {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+  }
 }

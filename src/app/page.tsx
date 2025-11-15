@@ -11,11 +11,11 @@ export default function Home() {
   const imageOpacity = useTransform(scrollYProgress, [0, 0.5], [1, 0.3]);
 
   return (
-    <div className="relative w-full min-h-screen overflow-y-auto overflow-x-hidden landing-container">
-      {/* Parallax Background */}
+    <>
+      {/* Parallax Background - Fixed */}
       <motion.div
         style={{ scale: imageScale, opacity: imageOpacity }}
-        className="fixed inset-0 w-full h-full"
+        className="fixed inset-0 w-full h-full z-0"
       >
         <motion.div
           initial={{ opacity: 0, scale: 1.05 }}
@@ -23,22 +23,24 @@ export default function Home() {
           transition={{ duration: 2 }}
           className="relative w-full h-full"
         >
-          <Image src={testImage} alt="bg" fill className="object-cover z-0" />
+          <Image src={testImage} alt="bg" fill className="object-cover" />
         </motion.div>
       </motion.div>
 
-      {/* Gradient Overlay */}
+      {/* Gradient Overlay - Fixed */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
-        className="fixed inset-0 bg-gradient-to-b lg:bg-gradient-to-r from-black/100 via-black/80 to-transparent z-10 backdrop-blur-[1rem] lg:backdrop-blur-0"
+        className="fixed inset-0 bg-gradient-to-b lg:bg-gradient-to-r from-black/90 via-black/60 to-transparent z-10 backdrop-blur-[0.5rem] lg:backdrop-blur-0"
       />
 
+      <div className="snap-container relative w-full landing-container">
+
       {/* Main Content */}
-      <div className="relative z-20 min-h-screen">
+      <div className="relative z-20">
         {/* Hero Section */}
-        <div className="min-h-screen flex flex-col justify-between px-8 md:px-16 lg:px-24 py-12">
+        <div className="snap-section flex flex-col justify-between px-8 md:px-16 lg:px-24 py-12">
           {/* Clock - Top on desktop only */}
           <div className="hidden lg:block absolute top-12 left-24">
             <div className="text-sm text-zinc-400 font-jetbrains drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">
@@ -115,7 +117,7 @@ export default function Home() {
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="min-h-screen flex flex-col justify-center px-8 md:px-16 lg:px-24 py-12"
+          className="snap-section flex flex-col justify-center px-8 md:px-16 lg:px-24 py-12"
         >
           <div className="w-full lg:w-2/3 lg:ml-auto text-left lg:text-right space-y-12">
             <div>
@@ -182,5 +184,6 @@ export default function Home() {
         </motion.div>
       </div>
     </div>
+    </>
   );
 }
