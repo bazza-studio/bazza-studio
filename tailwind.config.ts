@@ -11,6 +11,7 @@ export default {
     fontFamily: {
       geist: ["var(--font-geist-sans)"],
       geistMono: ["var(--font-geist-mono)"],
+      jetbrains: ["var(--font-jetbrains-mono)"],
     },
     extend: {
       colors: {

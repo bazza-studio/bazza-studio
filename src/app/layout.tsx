@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { Cursor } from "./components/cursor";
 
@@ -13,10 +13,16 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains-mono",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+});
+
 export const metadata: Metadata = {
   title: "Bazza Studio",
   description:
-    "Revolutionizing restaurant management and urban exploration through intuitive, powerful web applications.",
+    "Technology consulting firm specialized in implementing Artificial Intelligence solutions, cloud infrastructure, and ETL processes.",
 };
 
 export default function RootLayout({
@@ -27,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased font-geist`}
+        className={`${geistSans.variable} ${geistMono.variable} ${jetbrainsMono.variable} antialiased font-geist`}
       >
         {children}
         <Cursor />
